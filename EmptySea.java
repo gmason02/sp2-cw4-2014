@@ -1,8 +1,10 @@
-
 public class EmptySea extends Ship {
-
+	
+	boolean beenShot;
+	
 	EmptySea(){
 		length = 1;
+		beenShot=false;
 	}
 	
 	@Override
@@ -17,7 +19,7 @@ public class EmptySea extends Ship {
 	
 	@Override
 	public String toString(){
-		boolean beenShot = false;
+		
 		if (beenShot=false){
 			return ".";
 		}
@@ -25,5 +27,4 @@ public class EmptySea extends Ship {
 			return "-";
 		}
 	}
-	
 }
